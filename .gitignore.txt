@@ -1,1 +1,4 @@
-/nodemodules
+#dependencies
+./node_modules
+/gitignore.txt
+/git

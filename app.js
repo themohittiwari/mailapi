@@ -8,6 +8,11 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
+
+router.get("/",(req,res)=>{
+  res.send("Hello")
+})
+
 router.post("/edit/vendor",(req,res)=>{
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
